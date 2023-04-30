@@ -1,0 +1,192 @@
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    margin-top: 3.6%;
+    padding: 0;
+}
+
+.main-content--label {
+    margin: 0;
+    padding: 0;
+    width: 18%;
+}
+
+.main-content--label svg {
+    width: 100%;
+    height: 100%;
+}
+
+.main-content--form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 79%;
+    margin: 0;
+    padding: 0;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 42px 0;
+    padding: 0;
+}
+
+.form-label-txt {
+    width: 61%;
+    margin: 0;
+    margin-right: 5%;
+}
+
+.form-label-txt label {
+    font-family: 'Frutiger Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 124%;
+    color: #1D3E8E;
+}
+
+.form-input {
+    width: 33%;
+    margin: 0;
+    padding: 0;
+}
+
+.form-input input:not([type="checkbox"]) {
+    width: 100%;
+    height: 127px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background: #FFFFFF;
+    border: 1px solid #1D3E8C;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 140%;
+    text-align: center;
+}
+
+.form-input p {
+    margin: 0;
+    margin-left: 37.2px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 142%;
+    color: #1D3E8E;
+}
+
+@media screen and (max-width: 1920px) {
+    .form-label-txt label {
+        font-size: 45px;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 123px;
+        padding-left: 70px;
+        padding-right: 70px;
+        border-radius: 100px;
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1670px) {
+    .form-label-txt label {
+        font-size: 38px;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 103px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 100px;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .form-label-txt label {
+        font-size: 29px;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 93px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 100px;
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .form-control {
+        margin: 32px 0;
+    }
+
+    .form-label-txt label {
+        font-size: 21px;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 63px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 100px;
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .form-control {
+        margin: 22px 0;
+    }
+
+    .form-label-txt label {
+        font-size: 17px;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 43px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 100px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-control {
+        margin: 17px 0;
+    }
+
+    .form-label-txt label {
+        font-size: 14px;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 33px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 100px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .form-control {
+        margin: 12px 0;
+    }
+
+    .form-label-txt label {
+        font-size: 9px;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 33px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 100px;
+        font-size: 13px;
+    }
+}

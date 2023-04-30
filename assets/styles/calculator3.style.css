@@ -1,0 +1,156 @@
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    margin-top: 7.1%;
+    padding: 0;
+}
+
+.result-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.result-btn {
+    width: 50%;
+    margin: 0;
+    padding: 40px 25px;
+}
+
+.result-btn-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.result-btn-container svg {
+    width: 100%;
+    height: 100%;
+}
+
+.result-name {
+    position: absolute;
+    top: 16%;
+    left: 38%;
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 114%;
+    color: #1D3E8E;
+}
+
+.result-value {
+    position: absolute;
+    margin: 0;
+    top: 34%;
+    left: 36%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 114%;
+    color: #1D3E8E;
+}
+
+@media screen and (max-width: 1920px) {
+    .result-name {
+        top: 16%;
+        left: 38%;
+        font-size: 35px;
+    }
+    
+    .result-value {
+        top: 38%;
+        left: 36%;
+        font-size: 66px;
+    }
+}
+@media screen and (max-width: 1670px) {
+    .result-name {
+        top: 16%;
+        left: 38%;
+        font-size: 23px;
+    }
+    
+    .result-value {
+        top: 38%;
+        left: 36%;
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .result-name {
+        top: 16%;
+        left: 38%;
+        font-size: 20px;
+    }
+    
+    .result-value {
+        top: 38%;
+        left: 36%;
+        font-size: 39px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .result-name {
+        top: 16%;
+        left: 38%;
+        font-size: 14px;
+    }
+    
+    .result-value {
+        top: 38%;
+        left: 36%;
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .result-name {
+        top: 16%;
+        left: 38%;
+        font-size: 10px;
+    }
+    
+    .result-value {
+        top: 38%;
+        left: 36%;
+        font-size: 18px;
+    }
+
+    .result-btn {
+        padding: 23px 25px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .result-name {
+        top: 16%;
+        left: 38%;
+        font-size: 7px;
+    }
+    
+    .result-value {
+        top: 38%;
+        left: 36%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .result-name {
+        top: 16%;
+        left: 38%;
+        font-size: 5px;
+    }
+    
+    .result-value {
+        top: 38%;
+        left: 36%;
+        font-size: 11px;
+    }
+}

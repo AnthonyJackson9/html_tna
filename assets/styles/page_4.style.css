@@ -1,0 +1,489 @@
+.tna-body-container {
+    
+}
+
+.tna-body-container .tna-header01 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    animation: ani_header01 1.5s ease-in;
+}
+
+.tna-body-container .tna-article01 {
+    font-size: 13px;
+    margin: 0px;
+    padding-left: 7px;
+    animation: ani_article01 1s ease-in;
+}
+.tna-body-container .tna-article02 {
+    font-size: 13px;
+    margin: 0px;
+    padding-left: 7px;
+    animation: ani_article01 2s ease-out;
+}
+
+
+.tna-eff-container {
+    position: relative;
+    height: 60vh;
+    min-height: 350px;
+}
+
+.tna-wt-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 0px;
+    top: 3em;
+    right: 3em;
+    height: 30vh;
+    /* min-height: 300px; */
+}
+
+.tna-wt-cont {
+    display: flex;
+    margin: auto;
+}
+
+/* WEIGHT ELEMENT 1 START */
+.tna-wt-cont.tna-wt-cont01 {
+    margin-right: 190px;
+    margin-bottom: 0px;
+}
+.tna-wt-cont.tna-wt-cont01 p { 
+    margin: 0px;
+    margin-left: -20em;
+}
+
+.tna-wt-cont.tna-wt-cont01 .tna-wt-ele01 {
+    width: 110px;
+    text-align: right;
+    margin-top: -1em;
+}
+.tna-wt-cont.tna-wt-cont01 .tna-wt-ele01 p {
+    font-size: 8px;
+    padding-right: .1em;
+}
+.tna-wt-cont.tna-wt-cont01 .tna-wt-ele01 .tw01e01-p01 {
+    opacity: 0;
+    animation: ani_tw01_e01_p01 1s ease-in forwards;
+    animation-delay: .8s;
+    
+}
+.tna-wt-cont.tna-wt-cont01 .tna-wt-ele01 .tw01e01-p02 {
+    opacity: 0;
+    font-size: 15px;
+    font-weight: bold;
+    animation: ani_tw01_e01_p02 1s ease-in forwards;
+    animation-delay: 1s;
+}
+.tna-wt-cont.tna-wt-cont01 .tna-wt-ele01 .tw01e01-p03 {
+    opacity: 0;
+    animation: ani_tw01_e01_p03 1s ease-in forwards;
+    animation-delay: 1.2s;
+}
+
+.tna-wt-cont.tna-wt-cont01 .tna-wt-ele02 {
+    position: relative;
+    width: 30px;
+}
+.tna-wt-cont.tna-wt-cont01 .tna-wt-ele02 div {
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--app-back);
+    animation: ani_tw01_ele02_div .7s ease-in forwards;
+    animation-delay: .4s;
+}
+.tna-wt-cont.tna-wt-cont01 .tna-wt-ele02 img {
+    width: 100%;
+    height: auto;
+}
+.tna-wt-cont.tna-wt-cont01 .tna-wt-ele03 {
+    display: flex;
+}
+.tna-wt-cont.tna-wt-cont01 .tna-wt-ele03 img {
+    z-index: 10;
+    width: 35px;
+    margin-bottom: 0px;
+    scale: 0;
+    opacity: 0;
+    animation: ani_tw01_ele02_img .7s ease-in-out forwards;
+}
+/* WEIGHT ELEMENT 1 EMD */
+
+/* WEIGHT ELEMENT 1 ANIMATION START */
+/* weight element01 p tags animations start*/
+@keyframes ani_tw01_e01_p01 {
+    0% {margin-right: 6em; opacity: 0;}
+    100% {margin-right: 20px; opacity: 1;}
+}
+@keyframes ani_tw01_e01_p02 {
+    0% {margin-right: 6em; opacity: 0;}
+    100% {margin-right: 0; opacity: 1;}
+}
+@keyframes ani_tw01_e01_p03 {
+    0% {margin-right: 6em; opacity: 0;}
+    100% {margin-right: -5px; opacity: 1;}
+}
+/* weight element01 p tags animations end*/
+
+/* weight element01 img animation start */
+@keyframes ani_tw01_ele02_img {
+    0% {scale: 0; opacity: 0;}
+    85% {scale: 1.15;}
+    100% {scale: 1; opacity: 1;}
+}
+/* weight element01 img animation end */
+
+/* weight element02 overlay div animation start */
+@keyframes ani_tw01_ele02_div {
+    0% {width: 100%;}
+    100% {width: 0%;}
+}
+/* weight element02 overlay div animation end */
+/* WEIGHT ELEMENT 1 ANIMATION END */
+
+
+/* WEIGHT ELEMENT 2 START */
+.tna-wt-cont.tna-wt-cont02 {
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.tna-wt-cont.tna-wt-cont02 p { 
+    margin: 0px;
+    margin-right: -20em;
+}
+
+.tna-wt-cont.tna-wt-cont02 .tna-wt-ele01 {
+    width: 110px;
+    text-align: right;
+    margin-top: -1.5em;
+}
+.tna-wt-cont.tna-wt-cont02 .tna-wt-ele01 p {
+    font-size: 8px;
+    padding-left: .1em;
+    text-align: left;
+}
+.tna-wt-cont.tna-wt-cont02 .tna-wt-ele01 .tw02e01-p01 {
+    opacity: 0;
+    animation: ani_tw02_e01_p01 1s ease-in forwards;
+    animation-delay: .8s;
+    
+}
+.tna-wt-cont.tna-wt-cont02 .tna-wt-ele01 .tw02e01-p02 {
+    opacity: 0;
+    font-size: 25px;
+    font-weight: bold;
+    animation: ani_tw02_e01_p02 1s ease-in forwards;
+    animation-delay: 1s;
+}
+.tna-wt-cont.tna-wt-cont02 .tna-wt-ele01 .tw02e01-p03 {
+    opacity: 0;
+    animation: ani_tw02_e01_p03 1s ease-in forwards;
+    animation-delay: 1.2s;
+}
+
+.tna-wt-cont.tna-wt-cont02 .tna-wt-ele02 {
+    position: relative;
+    width: 30px;
+}
+.tna-wt-cont.tna-wt-cont02 .tna-wt-ele02 div {
+    z-index: 9;
+    right: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--app-back);
+    animation: ani_tw02_ele02_div .7s ease-in forwards;
+    animation-delay: .4s;
+}
+.tna-wt-cont.tna-wt-cont02 .tna-wt-ele02 img {
+    width: 100%;
+    height: auto;
+}
+.tna-wt-cont.tna-wt-cont02 .tna-wt-ele03 {
+    display: flex;
+}
+.tna-wt-cont.tna-wt-cont02 .tna-wt-ele03 img {
+    z-index: 10;
+    width: 55px;
+    margin-bottom: 0px;
+    scale: 0;
+    opacity: 0;
+    animation: ani_tw02_ele02_img .7s ease-in-out forwards;
+}
+/* WEIGHT ELEMENT 2 END */
+
+/* WEIGHT ELEMENT 2 ANIMATION START */
+/* weight element01 p tags animations start*/
+@keyframes ani_tw02_e01_p01 {
+    0% {margin-left: 6em; opacity: 0;}
+    100% {margin-left: 0px; opacity: 1;}
+}
+@keyframes ani_tw02_e01_p02 {
+    0% {margin-left: 6em; opacity: 0;}
+    100% {margin-left: 0; opacity: 1;}
+}
+@keyframes ani_tw02_e01_p03 {
+    0% {margin-left: 6em; opacity: 0;}
+    100% {margin-left: -5px; opacity: 1;}
+}
+/* weight element01 p tags animations end*/
+
+/* weight element01 img animation start */
+@keyframes ani_tw02_ele02_img {
+    0% {scale: 0; opacity: 0;}
+    85% {scale: 1.15;}
+    100% {scale: 1; opacity: 1;}
+}
+/* weight element01 img animation end */
+
+/* weight element02 overlay div animation start */
+@keyframes ani_tw02_ele02_div {
+    0% {width: 100%;}
+    100% {width: 0%;}
+}
+/* weight element02 overlay div animation end */
+/* WEIGHT ELEMENT 2 ANIMATION END */
+
+
+/* WEIGHT ELEMENT 3 START */
+.tna-wt-cont.tna-wt-cont03 {
+    margin-top: 0px;
+    margin-right: 40px;
+}
+
+.tna-wt-cont.tna-wt-cont03 p { 
+    margin: 0px;
+    margin-right: -20em;
+}
+
+.tna-wt-cont.tna-wt-cont03 .tna-wt-ele01 {
+    width: 110px;
+    text-align: right;
+    margin-top: -1.5em;
+    margin-bottom: -1em;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+.tna-wt-cont.tna-wt-cont03 .tna-wt-ele01 p {
+    font-size: 8px;
+    padding-left: .1em;
+    text-align: left;
+}
+.tna-wt-cont.tna-wt-cont03 .tna-wt-ele01 .tw03e01-p01 {
+    opacity: 0;
+    animation: ani_tw03_e01_p01 1s ease-in forwards;
+    animation-delay: .8s;
+    
+}
+.tna-wt-cont.tna-wt-cont03 .tna-wt-ele01 .tw03e01-p02 {
+    opacity: 0;
+    font-size: 15px;
+    font-weight: bold;
+    animation: ani_tw03_e01_p02 1s ease-in forwards;
+    animation-delay: 1s;
+}
+.tna-wt-cont.tna-wt-cont03 .tna-wt-ele01 .tw03e01-p03 {
+    opacity: 0;
+    animation: ani_tw03_e01_p03 1s ease-in forwards;
+    animation-delay: 1.2s;
+}
+
+.tna-wt-cont.tna-wt-cont03 .tna-wt-ele02 {
+    position: relative;
+    width: 30px;
+    display: flex;
+    margin-bottom: 0px;
+}
+.tna-wt-cont.tna-wt-cont03 .tna-wt-ele02 div {
+    z-index: 9;
+    right: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--app-back);
+    animation: ani_tw03_ele02_div .7s ease-in forwards;
+    animation-delay: .4s;
+}
+.tna-wt-cont.tna-wt-cont03 .tna-wt-ele02 img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 0px;
+}
+.tna-wt-cont.tna-wt-cont03 .tna-wt-ele03 {
+    display: flex;
+}
+.tna-wt-cont.tna-wt-cont03 .tna-wt-ele03 img {
+    z-index: 10;
+    width: 35px;
+    margin-bottom: 0px;
+    scale: 0;
+    opacity: 0;
+    animation: ani_tw03_ele02_img .7s ease-in-out forwards;
+}
+/* WEIGHT ELEMENT 3 END */
+
+
+/* WEIGHT ELEMENT 3 ANIMATION START */
+/* weight element01 p tags animations start*/
+@keyframes ani_tw03_e01_p01 {
+    0% {margin-left: 6em; opacity: 0;}
+    100% {margin-left: 0px; opacity: 1;}
+}
+@keyframes ani_tw03_e01_p02 {
+    0% {margin-left: 6em; opacity: 0;}
+    100% {margin-left: 0; opacity: 1;}
+}
+@keyframes ani_tw03_e01_p03 {
+    0% {margin-left: 6em; opacity: 0;}
+    100% {margin-left: -5px; opacity: 1;}
+}
+/* weight element01 p tags animations end*/
+
+/* weight element01 img animation start */
+@keyframes ani_tw03_ele02_img {
+    0% {scale: 0; opacity: 0;}
+    85% {scale: 1.15;}
+    100% {scale: 1; opacity: 1;}
+}
+/* weight element01 img animation end */
+
+/* weight element02 overlay div animation start */
+@keyframes ani_tw03_ele02_div {
+    0% {width: 100%;}
+    100% {width: 0%;}
+}
+/* weight element02 overlay div animation end */
+/* WEIGHT ELEMENT 3 ANIMATION END */
+
+@keyframes ani_header01 {
+    0% {margin-left: -6em; opacity: 0;}
+    100% {margin-left: 0px; opacity: 1;}
+}
+@keyframes ani_article01 {
+    0% {margin-left: -6em; opacity: 0;}
+    100% {margin-left: 0px; opacity: 1;}
+}
+@keyframes ani_article02 {
+    0% {margin-left: -6em; opacity: 0;}
+    100% {margin-left: 0px; opacity: 1;}
+}
+
+
+/* MILK CONTAINER START */
+.mk-container {
+    position: relative;
+}
+.mk-container .mk-cont {
+    position: absolute;
+}
+.mk-container .mk-cont img {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    /* animation-delay: 3s; */
+}
+.mk-container .mk-cont .img-mk-over { 
+    position: absolute;
+    opacity: 0;
+}
+
+.mk-container .mk-cont01 img {
+    animation: ani_mk_img_show 3s ease-in 0s forwards, ani_mk_img_hide 1s linear 3s forwards;
+}
+.mk-container .mk-cont01 .img-mk-over { 
+    animation: ani_mk_img_show 1s linear 3s forwards;
+}
+.mk-container .mk-cont02 img {
+    animation: ani_mk_img_show 3s ease-in 0s forwards, ani_mk_img_hide 1s linear 3s forwards;
+}
+.mk-container .mk-cont02 .img-mk-over { 
+    animation: ani_mk_img_show 1s linear 3s forwards;
+}
+.mk-container .mk-cont03 img {
+    animation: ani_mk_img_show 3s ease-in 1s forwards, ani_mk_img_hide 1s linear 3.6s forwards;
+}
+.mk-container .mk-cont03 .img-mk-over { 
+    animation: ani_mk_img_show 1s linear 3s forwards;
+}
+/* content01 */
+.mk-container .mk-cont01 {
+    width: 60px;
+    position: absolute;
+    animation: ani_mk01 3s ease-in-out forwards, ani_rotate 3s linear infinite forwards;
+}
+.mk-container .mk-cont01 .img-mk-over {
+    height: 118%;
+    width: 148%;
+}
+@keyframes ani_mk01 {
+    0% {top: -18em; left: -6em}
+    50% {left: 4em}
+    100% {top: 16em; left: 5em}
+}
+
+/* content02 */
+.mk-container .mk-cont02 {
+    width: 60px;
+    position: absolute;
+    animation: ani_mk02 3s ease-in-out 0.5s forwards, ani_rotate 3s linear infinite 0.5s forwards;
+}
+.mk-container .mk-cont02 .img-mk-over {
+    height: 118%;
+    width: 160%;
+    left: -27px;
+}
+@keyframes ani_mk02 {
+    0% {top: -16em; left: -6em}
+    50% {left: 9em}
+    100% {top: 10em; left: 8em}
+}
+
+/* content03 */
+.mk-container .mk-cont03 {
+    width: 60px;
+    position: absolute;
+    animation: ani_mk03 3s ease-in-out 1.5s forwards, ani_rotate 3s linear infinite 1.5s forwards;
+}
+.mk-container .mk-cont03 .img-mk-over {
+    height: 118%;
+    width: 134%;
+    left: -20px;
+}
+@keyframes ani_mk03 {
+    0% {top: -18em; left: -10em}
+    50% {left: 1em}
+    100% {top: 11em; left: 0em}
+}
+
+
+
+
+@keyframes ani_mk_img_hide {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes ani_mk_img_show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.rotate {
+    -webkit-animation: ani_rotate 3s linear infinite;
+    
+}
+.rotate.paused {
+    animation-play-state: paused;
+}
+@keyframes ani_rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* MILK CONTAINER END */

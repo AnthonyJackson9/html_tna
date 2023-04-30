@@ -1,0 +1,219 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+    margin: 35px 0;
+    padding: 0;
+}
+
+.form-label-img {
+    margin: 0;
+    margin-right: 1.32%;
+    width: 11.44%;
+    height: 11.44%;
+}
+
+.form-label-img svg {
+    width: 100%;
+    height: 100%;
+}
+
+.form-input {
+    width: 87.24%;
+    margin: 0;
+    padding: 0;
+}
+
+.form-input input:not([type="checkbox"]) {
+    width: 100%;
+    height: 182px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background: #FFFFFF;
+    border: 1px solid #1D3E8C;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 140%;
+}
+
+.form-input p {
+    margin: 0;
+    margin-left: 37.2px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 142%;
+    color: #1D3E8E;
+}
+
+.form-input input[type="checkbox"] {
+    align-self: flex-start;
+    background: #FFFFFF;
+    border: 1.07px solid #1D3E8C;
+    width: 135px;
+    height: 50px;
+}
+
+@media screen and (max-width: 2304px) {
+    .form-control {
+        margin: 35px 0;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 182px;
+        font-size: 53px;
+    }
+
+    .form-input p {
+        font-size: 31px;
+        margin-left: 37.2px;
+    }
+
+    .form-input input[type="checkbox"] {
+        width: 135px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .form-control {
+        margin: 30px 0;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 149px;
+        font-size: 45px;
+    }
+
+    .form-input p {
+        margin-left: 9px;
+        font-size: 26px;
+    }
+
+    .form-input input[type="checkbox"] {
+        height: 43px;
+        width: 131px;
+    }
+}
+
+@media screen and (max-width: 1670px) {
+    .form-control {
+        margin: 23px 0;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 130px;
+        font-size: 39px;
+        line-height: 140%;
+    }
+
+    .form-input p {
+        margin-left: 9px;
+        font-size: 22px;
+    }
+
+    .form-input input[type="checkbox"] {
+        width: 101px;
+        height: 31px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .form-control {
+        margin: 15px 0;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 98px;
+        font-size: 33px;
+        line-height: 140%;
+    }
+
+    .form-input p {
+        margin-left: 9px;
+        font-size: 18px;
+    }
+
+    .form-input input[type="checkbox"] {
+        width: 89px;
+        height: 26px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .form-control {
+        margin: 15px 0;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 75px;
+        font-size: 23px;
+        line-height: 140%;
+    }
+
+    .form-input p {
+        margin-left: 9px;
+        font-size: 15px;
+    }
+
+    .form-input input[type="checkbox"] {
+        width: 76px;
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-control {
+        margin: 15px 0;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 58px;
+        padding-left: 30px;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    .form-input p {
+        margin-left: 9px;
+        font-size: 15px;
+    }
+
+    .form-input input[type="checkbox"] {
+        width: 76px;
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-control {
+        margin: 15px 0;
+    }
+
+    .form-input input:not([type="checkbox"]) {
+        height: 48px;
+        padding-left: 30px;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    .form-input p {
+        margin-left: 5px;
+        font-size: 11px;
+    }
+
+    .form-input input[type="checkbox"] {
+        width: 76px;
+        height: 12px;
+    }
+}

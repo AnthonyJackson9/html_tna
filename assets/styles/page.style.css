@@ -1,0 +1,258 @@
+body {
+    overflow-x: hidden;
+}
+.dash-container {
+    transform: rotate(45deg);
+    width: 220%;
+    margin-top: -10%;
+    margin-left: -60%;
+}
+.border-cont {
+    border-radius: 20px;
+}
+
+.lg-content {
+    display: flex;    
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.lg-content img {
+    width: 10%;
+    transform: rotate(-45deg);
+    margin-left: -22%;
+    animation: ani_logo .7s ease-in-out;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+.eff1-rest-cont.color-dv-cont {
+    display: flex;
+}
+/* text styles start */
+.text-flow-decoration {
+    
+}
+.text-flow-decoration{
+    color: #fff;
+    margin: auto;
+    margin-left: 2em;
+    margin-top: 2em;
+    width: 65%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    transform: rotate(-45deg);
+}
+
+.text-flow-decoration h1{
+    width: 60%;    
+    margin: 0px;
+    font-size: 25px;
+    white-space: pre;
+    display: block;
+    text-align: right;
+}
+
+.text-flow-decoration p{
+    width: 60%;
+    font-size: 10px;
+    display: block;
+    text-align: right;
+    opacity: 0;
+}
+
+.char{
+    color: #fff;
+    z-index: 999;
+    font-size: 15px;
+    height: 15px;
+    animation: ani_text_flow_decoration .7s ease-out 1 both;
+    display: inline-block;
+}
+
+
+.text-flow-decoration .tf01 {
+    animation: ani_hele01 2s ease-in;
+    animation-duration: 1s;
+}
+.text-flow-decoration .tf02 {
+    animation: ani_hele02 2s ease-in;
+    animation-duration: 1.2s;
+}
+.text-flow-decoration .tf03 {
+    animation: ani_hele03 2s ease-in;
+    animation-duration: 1.4s;
+}
+.text-flow-decoration .tfbtn {
+    animation: ani_bele01 2s ease-in-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.fbtn-cont {
+    width: 60%;
+    /* margin: auto; */
+    display: flex;
+}
+
+.fbtn-cont button {
+    margin: auto;
+    margin-right: 0px;
+    padding: .3em;
+}
+.fbtn-cont button span {
+    margin: auto;
+    font-weight: bold;
+    padding: 0 .1em 0 .5em;     
+}
+.fbtn-cont button img {
+    padding: .5em; 
+    background: #fff; 
+    width: 1.5em;
+    border-radius: 50%;
+}
+
+@keyframes ani_text_flow_decoration{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-5px, -60px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+
+/* effect styles start */
+.eff-container {
+    width: 100%;    
+}
+
+.eff-container .eff-content {
+    width: 100%;
+    display: flex;    
+    justify-content: flex-start;
+}
+.eff-container .eff-content > div {
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.eff-container .img-eff-cont {
+    width: 33%;
+    position: relative;
+}
+.eff-container .img-eff-cont img {
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 80%;
+    right: -80px;
+    top: 10px;
+}
+/* .eff-container .eff1-content {
+    animation: ani_eff1_img .6s ease-in-out;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+} */
+.eff-container .eff1-content .color-dv-cont {
+    width: 66%;
+}
+
+.eff-container .eff2-content { margin-left: 8%; }
+.eff-container .eff2-content .color-dv-cont {
+    width: 33%;
+}
+
+.eff2-rest-cont {
+    background-color: blue;
+}
+
+.eff-content.eff1-content {
+    opacity: 0;
+    animation: ani_eff1_img_container .6s ease-in-out;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+.eff-container .eff1-rest-cont.img-eff-cont {
+    opacity: 0; 
+    margin-left: -20%; 
+    margin-right: 20%;
+    background-image: url("../images/img2.png");
+    background-size: 100%;
+    animation: ani_eff1_img .6s ease-in-out;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+}
+
+.eff-content.eff2-content {
+    opacity: 0; 
+    margin-left: 30%;
+    animation: ani_eff2_img .2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.eff-container .eff2-rest-cont.img-eff-cont {
+    background-image: url("../images/img2.png");
+    background-size: 100%;
+}
+
+.eff1-content .color-dv-cont {
+    background: #009CE0;
+}
+.eff2-content .color-dv-cont {
+    background: #1D3E8E;
+}
+/* logo animati2n */
+@keyframes ani_logo {
+    0% {opacity: 0; margin-left: -30%;}
+    100% {opacity: 1; margin-left: -22%;}
+}
+/* header01 element animation 01 */
+@keyframes ani_hele01 {
+    0% {opacity: 0; margin-left: -5em;}
+    100% {opacity: 1; margin-left: 0;}
+}
+/* header01 element animation 02 */
+@keyframes ani_hele02 {
+    0% {opacity: 0; margin-left: -5em;}
+    100% {opacity: 1; margin-left: 0;}
+}
+/* header01 element animation 03 */
+@keyframes ani_hele03 {
+    0% {opacity: 0; margin-left: -5em;}
+    100% {opacity: 1; margin-left: 0;}
+}
+/* button element animation 01 */
+@keyframes ani_bele01 {
+    0% {opacity: 0; margin-left: -10em;}
+    100% {opacity: 1; margin-left: 0;}
+}
+
+/* effect 2 container animation */
+@keyframes ani_eff2_img {
+    0% {opacity: 0; margin-left: 30%;}
+    100% {opacity: 1; margin-left: 8%;}
+}
+
+/* effect 1 image container */
+@keyframes ani_eff1_img_container {
+    0% {opacity: 0; margin-left: -50%;}
+    70% {margin-left: -8%;}
+    100% {opacity: 1; margin-left: -8%;}
+}
+/* effect 1 image element */
+@keyframes ani_eff1_img {
+    0% {opacity: 0; margin-left: -20%; margin-right: 20%;}
+    100% {opacity: 1; margin-left: 5px; margin-right: 5px;}
+}
+
+
+
+/* RESPONSIVE START */
+
+/* RESPONSIVE END */

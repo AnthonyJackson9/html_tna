@@ -1,0 +1,365 @@
+:root {
+    box-sizing: border-box;
+    --dark-blue: #1D3E8E;
+    --app-back: #fff;
+}
+
+
+
+@font-face {
+    font-family: 'ArchitectsDaughter'; /* The name of the font. */
+    src: url('../fonts/ArchitectsDaughter-Regular.ttf') format('truetype'); /* The URL to the font file. */
+}
+@font-face {
+    font-family: 'Frutiger-Bold'; /* The name of the font. */
+    src: url('../fonts/Frutiger-Bold.ttf') format('truetype'); /* The URL to the font file. */
+}
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+body, button, span, p {
+    font-family: 'Frutiger-Bold', sans-serif;
+    /* color: var(--dark-blue); */
+}
+
+.tna-fcolor {
+    color: var(--dark-blue);
+}
+.fbtn {
+    border-radius: 2em;
+    font-size: 15px;
+    padding: .7em;
+    border: none;
+}
+.fbtn-blue-start {
+    background-color: var(--dark-blue);
+    color: #fff;
+    font-size: 12px;
+    padding: 1em;
+    display: flex;
+}
+button.fbtn-blue-start {
+
+}
+
+
+/* header style global start */
+.tna-header {
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2.5em;
+}
+
+.tna-header-page-container {
+    position: absolute;
+    background-color: #009CE0;
+    color: #fff;
+    border-radius: 1em;
+    font-size: 15px;
+    width: 5em;
+    height: 5em;
+    left: -1em;
+    top: -3em;
+    transform: rotate(45deg);
+}
+.tna-header-page-container p {
+    position: absolute;
+    right: .5em;
+    bottom: 0px;
+    margin-bottom: 0px;
+    transform: rotate(-45deg);
+}
+.tna-header-page-container p span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tna-header-title {
+    position: relative;
+}
+.tna-header-title p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1D3E8E;
+    margin: 0px;
+}
+.tna-header-title img {
+    width: 20px;
+    position: absolute;
+    margin-left: -1.5em;
+}
+
+
+.tna-header-logo {
+    display: flex;
+    position: absolute;
+    right: -8em;
+    top: 1em;
+}
+.tna-header-logo img {
+    width: 50px;
+    height: auto;
+    transform: rotate(-45deg);
+    margin: 1em;
+}
+
+.tna-logo-pack {
+    display: flex;
+    transform: rotate(45deg);
+}
+.tna-logo-pack .lg-eff {
+    display: flex;
+}
+.tna-logo-pack .lg-eff > div {
+    display: flex;
+    width: 150px;
+    margin: auto;
+}
+.tna-logo-pack .lg-eff .lg-eff-element {
+    background-color: #1B9CD9;
+}
+
+.tna-logo-pack .lg-eff .lg-eff01,.lg-eff02 {
+    display: flex;
+    flex-direction: column;
+}
+.tna-logo-pack .lg-eff .lg-eff01 .lg-eff01-01 {
+    width: 100%;
+    height: 1px;
+    margin: 8px -17px;
+}
+.tna-logo-pack .lg-eff .lg-eff01 .lg-eff01-02 {
+    width: 100%;
+    height: 3px;
+    margin: 0px 0;
+}
+.tna-logo-pack .lg-eff .lg-eff01 .lg-eff01-03 {
+    width: 100%;
+    height: 1px;
+    margin: 2px -12px;
+}
+
+.tna-logo-pack .lg-eff .lg-eff02 .lg-eff02-01 {
+    width: 100%;
+    height: 3px;
+    margin: 4px 20px;
+}
+.tna-logo-pack .lg-eff .lg-eff02 .lg-eff02-02 {
+    width: 100%;
+    height: 1px;
+    margin: 0px 0;
+}
+
+/* header style global end */
+
+
+/* footer style global start */
+.tna-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12%;
+    width: 80%;
+    margin: auto;
+    padding-top: 20%;
+    color: #1D3E8E;
+}
+
+.tna-footer-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.tna-footer-title p {
+    margin: 0px;
+}
+.tna-footer-title img {   
+    position: absolute;
+    margin-left: -1.5em;
+}
+.tna-footer-compname span {
+    color: #2FA8DF;
+}
+/* footer style global end */
+
+/* From FarAway */
+@font-face {
+    font-family: 'Frutiger Bold'; 
+    src: url('../fonts/Frutiger-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ArchitectsDaughter'; 
+    src: url('../fonts/ArchitectsDaughter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FrutigerLTStd'; 
+    src: url('../fonts/FrutigerLTStd-Roman.otf') format('truetype');
+}
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Frutiger Bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.main-container {
+    width: 100%;
+    margin: 0;
+    padding: 30px 12.15%;
+}
+
+.main-desc {
+    margin: 1.73% 0;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    color: #1D3E8E;
+}
+
+.next-step {
+    margin-right: -5.9%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10.81%;
+}
+
+.next-step p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 114%;
+    margin: 0;
+    margin-right: 66.75px;
+}
+
+.next-step p a {
+    text-decoration: 0;
+    color: #1D3E8E;
+}
+
+.next-step-img {
+    width: 136px;
+    height: 136px;
+    margin: 0;
+    padding: 0;
+}
+
+.next-step-img svg {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+    .main-desc {
+        font-size: 51px;
+        line-height: 140%;
+    }
+
+    .next-step p {
+        font-size: 68px;
+        margin-right: 38px;
+    }
+    
+    .next-step-img {
+        width: 115px;
+        height: 115px;
+    }
+}
+@media screen and (max-width: 1670px) {
+    .main-desc {
+        font-size: 41px;
+        line-height: 140%;
+    }
+
+    .next-step p {
+        font-size: 57px;
+        margin-right: 30px;
+    }
+    
+    .next-step-img {
+        width: 97px;
+        height: 97px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .main-desc {
+        font-size: 35px;
+        line-height: 140%;
+    }
+
+    .next-step p {
+        font-size: 47px;
+        margin-right: 23px;
+    }
+    
+    .next-step-img {
+        width: 82px;
+        height: 82px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .main-desc {
+        font-size: 29px;
+        line-height: 140%;
+    }
+
+    .next-step p {
+        font-size: 35px;
+        margin-right: 18px;
+    }
+    
+    .next-step-img {
+        width: 61px;
+        height: 61px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-desc {
+        font-size: 22px;
+        line-height: 140%;
+    }
+
+    .next-step p {
+        font-size: 31px;
+        margin-right: 18px;
+    }
+    
+    .next-step-img {
+        width: 55px;
+        height: 55px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .main-desc {
+        font-size: 17px;
+        line-height: 140%;
+    }
+
+    .next-step p {
+        font-size: 26px;
+        margin-right: 18px;
+    }
+    
+    .next-step-img {
+        width: 40px;
+        height: 40px;
+    }
+}
