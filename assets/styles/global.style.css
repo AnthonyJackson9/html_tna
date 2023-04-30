@@ -154,6 +154,14 @@ button.fbtn-blue-start {
 
 /* header style global end */
 
+.remove-aniamtions {
+    opacity: 0;
+}
+.play-animation {
+    opacity: 1;
+}
+
+
 
 /* footer style global start */
 .tna-footer {
@@ -162,10 +170,13 @@ button.fbtn-blue-start {
     margin-top: 12%;
     width: 80%;
     margin: auto;
+    font-size: 10px;
     padding-top: 20%;
     color: #1D3E8E;
 }
-
+.tna-footer-title img {
+    width: 10px;
+}
 .tna-footer-title {
     display: flex;
     flex-direction: column;

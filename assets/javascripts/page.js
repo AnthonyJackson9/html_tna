@@ -5,6 +5,10 @@ $(document).ready(() => {
     setTimeout(() => {
         aniTextFlow();
     }, 500);
+
+    $(".fbtn-blue-start").click(() => {
+        location.replace('tna_page1.html');
+    })
 })
 
 var aniTextFlow = () => {
@@ -36,4 +40,19 @@ $(window).resize(() => {
     $(".eff-content").css('height', ($(".eff1-rest-cont.img-eff-cont").width()))
 })
 
+
+function toggleAnimations() {
+    // $("[class^='ani_']").removeClass('remove-animations').addClass('play-animations');
+    // $('body').css('opacity', 0).delay(100);
+    // $('body').css('opacity', 1);
+    // setTimeout(() => {
+    //     $('body').css('opacity', 0);
+    // // $("[class^='ani_']").removeClass('play-animations').addClass('remove-animations');
+    // }, 1000);
+    
+    // myFunction();
+    location.reload();
+}
+
+setInterval(toggleAnimations, 10000);
 

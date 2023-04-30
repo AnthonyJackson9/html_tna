@@ -413,6 +413,12 @@
 .mk-container .mk-cont03 .img-mk-over { 
     animation: ani_mk_img_show 1s linear 3s forwards;
 }
+.mk-container .mk-cont04 img {
+    animation: ani_mk_img_show 4s ease-in 1s forwards, ani_mk_img_hide 1s linear 4.4s forwards;
+}
+.mk-container .mk-cont04 .img-mk-over { 
+    animation: ani_mk_img_show 1s linear 4.4s forwards;
+}
 /* content01 */
 .mk-container .mk-cont01 {
     width: 60px;
@@ -463,8 +469,88 @@
     100% {top: 11em; left: 0em}
 }
 
+/* content04 */
+.mk-container .mk-cont04 {
+    width: 60px;
+    position: absolute;
+    animation: ani_mk04 3s ease-in-out 1.5s forwards, ani_rotate 3s linear infinite 1.5s forwards;
+}
+.mk-container .mk-cont04 .img-mk-over {
+    height: 118%;
+    width: 149%;
+    left: 0px;
+}
+@keyframes ani_mk04 {
+    0% {top: -22em; left: -12em}
+    50% {left: 7em}
+    100% {top: 5em; left: 6em}
+}
+
+/* green foot */
+.tna-green-foot {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    right: -20%;
+    opacity: 0;
+    animation: ani_green_ft_img 1s ease-in-out 2s forwards;
+}
+.tna-green-foot img {
+    /* animation: ani_mk_img_show 1.5s ease-in 2s forwards; */
+}
+.tna-green-foot .img-mk-over { 
+    bottom: 0px;
+    opacity: 0;
+    position: absolute;
+    animation: ani_mk_img_show 0.3s linear 4s forwards;
+}
+.tna-green-foot img {
+    width: 100%;
+}
+@keyframes ani_green_ft_img {
+    0% {scale: 0; opacity: 0;}
+    85% {scale: 1.15;}
+    100% {scale: 1; opacity: 1;}
+}
 
 
+/* SAVE MONEY BOX STYLE START */
+
+
+.tna-smb-container {
+    position: absolute;
+    right: 10%;
+    bottom: 0px;
+    width: 40%;
+}
+.tna-smb-container img.pig-box {
+    width: 100%;
+}
+
+.tna-coin-container {
+    
+}
+.tna-coin-container .coin {
+    position: absolute;
+    opacity: 0;
+}
+.tna-smb-container img.pig-box {
+    width: 100%;
+}
+.coin.coin01 {
+    width: 15px;
+    /* top: -2em;
+    left: 38%; */
+    animation:  ani_mk_img_show 3s ease-in-out 0.5s forwards, 
+                ani_coin01 3s ease-in-out 0.5s forwards, 
+                ani_rotate 3s linear infinite 0.5s forwards;
+}
+@keyframes ani_coin01 {
+    0% {top: -16em; left: -6em}
+    100% {top: -10%; left: 45%}
+}
+/* SAVE MONEY BOX STYLE END */
 
 @keyframes ani_mk_img_hide {
     0% {opacity: 1;}

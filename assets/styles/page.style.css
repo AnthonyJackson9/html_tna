@@ -103,6 +103,7 @@ body {
 }
 
 .fbtn-cont button {
+    cursor: pointer;
     margin: auto;
     margin-right: 0px;
     padding: .3em;
