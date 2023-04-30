@@ -35,7 +35,7 @@ body, button, span, p {
 .fbtn-blue-start {
     background-color: var(--dark-blue);
     color: #fff;
-    font-size: 12px;
+    font-size: 22px;
     padding: 1em;
     display: flex;
 }

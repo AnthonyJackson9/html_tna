@@ -54,5 +54,5 @@ function toggleAnimations() {
     location.reload();
 }
 
-setInterval(toggleAnimations, 10000);
+//setInterval(toggleAnimations, 10000);
 

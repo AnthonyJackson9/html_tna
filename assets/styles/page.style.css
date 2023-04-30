@@ -52,7 +52,7 @@ body {
 .text-flow-decoration h1{
     width: 60%;    
     margin: 0px;
-    font-size: 25px;
+    font-size: 40px;
     white-space: pre;
     display: block;
     text-align: right;
@@ -60,17 +60,102 @@ body {
 
 .text-flow-decoration p{
     width: 60%;
-    font-size: 10px;
+    font-size: 15px;
     display: block;
     text-align: right;
     opacity: 0;
 }
 
+@media screen and (min-width: 800px) {
+    .text-flow-decoration h1{
+        width: 60%;    
+        margin: 0px;
+        font-size: 60px;
+        white-space: pre;
+        display: block;
+        text-align: right;
+    }
+    
+    .text-flow-decoration p{
+        width: 60%;
+        font-size: 20px;
+        display: block;
+        text-align: right;
+        opacity: 0;
+    }
+
+    .fbtn-blue-start {
+        background-color: var(--dark-blue);
+        color: #fff;
+        font-size: 22px;
+        padding: 1em;
+        display: flex;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .text-flow-decoration h1{
+        width: 60%;    
+        margin: 0px;
+        font-size: 100px;
+        white-space: pre;
+        display: block;
+        text-align: right;
+    }
+    
+    .text-flow-decoration p{
+        width: 60%;
+        font-size: 30px;
+        display: block;
+        text-align: right;
+        opacity: 0;
+    }
+}
+@media screen and (min-width: 1700px) {
+    .text-flow-decoration h1{
+        width: 60%;    
+        margin: 0px;
+        font-size: 130px;
+        white-space: pre;
+        display: block;
+        text-align: right;
+    }
+    
+    .text-flow-decoration p{
+        width: 60%;
+        font-size: 45px;
+        display: block;
+        text-align: right;
+        opacity: 0;
+    }
+
+    .lg-content {
+        margin: 136px 0;
+    }
+}
+@media screen and (min-width: 2500px) {
+    .text-flow-decoration h1{
+        width: 60%;    
+        margin: 0px;
+        font-size: 130px;
+        white-space: pre;
+        display: block;
+        text-align: right;
+    }
+    
+    .text-flow-decoration p{
+        width: 60%;
+        font-size: 45px;
+        display: block;
+        text-align: right;
+        opacity: 0;
+    }
+}
+
 .char{
     color: #fff;
     z-index: 999;
-    font-size: 15px;
-    height: 15px;
+    /* font-size: 15px; */
+    /* height: 15px; */
     animation: ani_text_flow_decoration .7s ease-out 1 both;
     display: inline-block;
 }
