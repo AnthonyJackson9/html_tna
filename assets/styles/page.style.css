@@ -89,6 +89,7 @@ body {
     animation-duration: 1.4s;
 }
 .text-flow-decoration .tfbtn {
+    cursor: pointer!important;
     animation: ani_bele01 2s ease-in-out;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
