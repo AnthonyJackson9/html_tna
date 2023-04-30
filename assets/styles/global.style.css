@@ -194,6 +194,104 @@ button.fbtn-blue-start {
 }
 /* footer style global end */
 
+
+
+
+@media screen and (min-width: 2160px) {
+    .tna-header-title p {
+        font-size: 50px;
+    }
+    .tna-header-logo img {
+        width: 380px;
+    }
+    .tna-header-page-container {
+        font-size: 20px;
+    }
+    .tna-header-logo {
+        right: 3em;
+    }
+    .tna-footer {
+        font-size: 30px;
+    }
+    .tna-footer-title img {
+        width: 30px;
+    }
+}
+
+
+@media screen and (max-width: 2160px) {
+    .tna-header-title p {
+        font-size: 50px;
+    }
+    .tna-header-logo img {
+        width: 380px;
+    }
+    .tna-header-page-container {
+        font-size: 20px;
+    }
+    .tna-header-logo {
+        right: 0em;
+    }
+    .tna-footer {
+        font-size: 30px;
+    }
+    .tna-footer-title img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .tna-header-title p {
+        font-size: 35px;
+    }
+    .tna-header-logo img {
+        width: 150px;
+    }
+    .tna-header-logo {
+        right: -10em;
+    }
+    .tna-footer {
+        font-size: 20px;
+    }
+    .tna-footer-title img {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tna-header-title p {
+        font-size: 25px;
+    }
+    .tna-header-logo img {
+        width: 100px;
+    }
+    .tna-header-logo {
+        right: -7em;
+    }
+    .tna-footer {
+        font-size: 10px;
+    }
+    .tna-footer-title img {
+        width: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* From FarAway */
 @font-face {
     font-family: 'Frutiger Bold'; 

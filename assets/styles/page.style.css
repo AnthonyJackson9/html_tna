@@ -131,6 +131,13 @@ body {
     .lg-content {
         margin: 136px 0;
     }
+    .fbtn-blue-start {
+        background-color: var(--dark-blue);
+        color: #fff;
+        font-size: 42px;
+        padding: 1em;
+        display: flex;
+    }
 }
 @media screen and (min-width: 2500px) {
     .text-flow-decoration h1{
