@@ -189,7 +189,7 @@
 
 .tna-wt-cont.tna-wt-cont02 .tna-wt-ele02 {
     position: relative;
-    width: 30px;
+    /* width: 30px; */
 }
 .tna-wt-cont.tna-wt-cont02 .tna-wt-ele02 div {
     z-index: 9;
@@ -419,6 +419,12 @@
 .mk-container .mk-cont04 .img-mk-over { 
     animation: ani_mk_img_show 1s linear 4.4s forwards;
 }
+.mk-container .mk-cont05 img {
+    animation: ani_mk_img_show 5s ease-in 1s forwards, ani_mk_img_hide 1s linear 5.4s forwards;
+}
+.mk-container .mk-cont05 .img-mk-over { 
+    animation: ani_mk_img_show 1s linear 5.4s forwards;
+}
 /* content01 */
 .mk-container .mk-cont01 {
     width: 60px;
@@ -426,13 +432,14 @@
     animation: ani_mk01 3s ease-in-out forwards, ani_rotate 3s linear infinite forwards;
 }
 .mk-container .mk-cont01 .img-mk-over {
-    height: 118%;
-    width: 148%;
+    height: 108%;
+    width: 100%;
 }
 @keyframes ani_mk01 {
     0% {top: -18em; left: -6em}
     50% {left: 4em}
-    100% {top: 16em; left: 5em}
+    100% {top: 23em; left: 18em}
+    /* 100% {top: 16em; left: 5em} */
 }
 
 /* content02 */
@@ -449,7 +456,8 @@
 @keyframes ani_mk02 {
     0% {top: -16em; left: -6em}
     50% {left: 9em}
-    100% {top: 10em; left: 8em}
+    100% {top: 18em; left: 8em}
+    /* 100% {top: 10em; left: 8em} */
 }
 
 /* content03 */
@@ -466,7 +474,8 @@
 @keyframes ani_mk03 {
     0% {top: -18em; left: -10em}
     50% {left: 1em}
-    100% {top: 11em; left: 0em}
+    100% {top: 14em; left: -4em}
+    /* 100% {top: 11em; left: 0em} */
 }
 
 /* content04 */
@@ -483,15 +492,34 @@
 @keyframes ani_mk04 {
     0% {top: -22em; left: -12em}
     50% {left: 7em}
-    100% {top: 5em; left: 6em}
+    100% {top: 8em; left: 13em}
+    /* 100% {top: 5em; left: 6em} */
+}
+
+/* content05 */
+.mk-container .mk-cont05 {
+    width: 60px;
+    position: absolute;
+    animation: ani_mk05 3s ease-in-out 1.5s forwards, ani_rotate 3s linear infinite 1.5s forwards;
+}
+.mk-container .mk-cont05 .img-mk-over {
+    height: 118%;
+    width: 149%;
+    left: 0px;
+}
+@keyframes ani_mk05 {
+    0% {top: -22em; left: -12em}
+    50% {left: 7em}
+    100% {top: 7em; left: 2em}
+    /* 100% {top: 3em; left: 10em} */
 }
 
 /* green foot */
 .tna-green-foot {
     z-index: -1;
     position: absolute;
-    width: 100%;
-    bottom: 5%;
+    width: 70%;
+    bottom: -2%;
     right: -20%;
     opacity: 0;
     animation: ani_green_ft_img 1s ease-in-out 2s forwards;
@@ -521,7 +549,7 @@
 .tna-smb-container {
     position: absolute;
     right: 10%;
-    bottom: 0px;
+    bottom: -10%;
     width: 40%;
 }
 .tna-smb-container img.pig-box {
@@ -538,18 +566,69 @@
 .tna-smb-container img.pig-box {
     width: 100%;
 }
+
+/* COIN CONTAINER START */
+.coin {
+    z-index: 20;
+}
+/* coin 1 contianer */
 .coin.coin01 {
     width: 15px;
-    /* top: -2em;
-    left: 38%; */
-    animation:  ani_mk_img_show 3s ease-in-out 0.5s forwards, 
-                ani_coin01 3s ease-in-out 0.5s forwards, 
-                ani_rotate 3s linear infinite 0.5s forwards;
+    animation:  ani_mk_img_show 6s ease-in-out 0.5s forwards, 
+                ani_coin01 6s ease-in-out 0.5s forwards, 
+                ani_rotate 6s linear infinite 0.5s forwards;
 }
 @keyframes ani_coin01 {
     0% {top: -16em; left: -6em}
     100% {top: -10%; left: 45%}
 }
+/* coin 2 contianer */
+.coin.coin02 {
+    width: 25px;
+    animation:  ani_mk_img_show 6s ease-in-out 0.5s forwards, 
+                ani_coin02 6s ease-in-out 0.5s forwards, 
+                ani_rotate 6s linear infinite 0.5s forwards;
+}
+@keyframes ani_coin02 {
+    0% {top: -16em; left: -6em}
+    100% {top: -10%; left: 45%}
+}
+/* coin 3 contianer */
+.coin.coin03 {
+    width: 38px;
+    animation:  ani_mk_img_show 6s ease-in-out 0.5s forwards, 
+                ani_coin03 6s ease-in-out 0.5s forwards, 
+                ani_rotate 6s linear infinite 0.5s forwards;
+}
+@keyframes ani_coin03 {
+    0% {top: -16em; left: -6em}
+    100% {top: -10%; left: 45%}
+}
+/* coin 4 contianer */
+.coin.coin04 {
+    width: 38px;
+    animation:  ani_mk_img_show 6s ease-in-out 0.5s forwards, 
+                ani_coin04 6s ease-in-out 0.5s forwards, 
+                ani_rotate 6s linear infinite 0.5s forwards;
+}
+@keyframes ani_coin04 {
+    0% {top: -16em; left: -6em}
+    100% {top: -10%; left: 45%}
+}
+/* coin 5 contianer */
+.coin.coin05 {
+    width: 40px;
+    animation:  ani_mk_img_show 6s ease-in-out 0.5s forwards, 
+                ani_coin05 6s ease-in-out 0.5s forwards, 
+                ani_rotate 6s linear infinite 0.5s forwards;
+}
+@keyframes ani_coin05 {
+    0% {top: -16em; left: -6em}
+    100% {top: -10%; left: 45%}
+}
+
+/* COIN CONTAINER START */
+
 /* SAVE MONEY BOX STYLE END */
 
 @keyframes ani_mk_img_hide {
@@ -573,3 +652,585 @@
     100% { transform: rotate(360deg); }
 }
 /* MILK CONTAINER END */
+
+@media screen and (min-width: 600px)
+{
+    .tna-green-foot {
+        bottom: -35%;
+        width: 96%;
+    }
+}
+
+/* RESPONSIVE START */
+@media screen and (min-width: 800px) {
+    .tna-green-foot {
+        bottom: -35%;
+        width: 96%;
+    }
+    .tna-smb-container {
+        bottom: -55%;
+    }
+    .tna-eff-container {
+        min-height: 650px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .mk-container .mk-cont01 {
+        width: 80px;
+    }
+    .mk-container .mk-cont02 {
+        width: 100px;
+    }
+    .mk-container .mk-cont02 {
+        width: 120px;
+    }
+    .mk-container .mk-cont02 {
+        width: 100px;
+    }
+    .mk-container .mk-cont02 .img-mk-over {
+        width: 148%;
+        left: -34px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .mk-container .mk-cont01 {
+        width: 80px;
+    }
+    .mk-container .mk-cont02 {
+        width: 100px;
+    }
+    .mk-container .mk-cont02 {
+        width: 120px;
+    }
+    .mk-container .mk-cont02 {
+        width: 100px;
+    }
+    .mk-container .mk-cont02 .img-mk-over {
+        width: 148%;
+        left: -34px;
+    }
+}
+@media screen and (max-width: 1800px) {
+    .mk-container .mk-cont01 {
+        width: 80px;
+    }
+    .mk-container .mk-cont02 {
+        width: 100px;
+    }
+    .mk-container .mk-cont02 {
+        width: 120px;
+    }
+    .mk-container .mk-cont02 {
+        width: 100px;
+    }
+    .mk-container .mk-cont02 .img-mk-over {
+        width: 148%;
+        left: -34px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tna-wt-ele02 {
+        width: 75px;
+    }
+    .tna-wt-cont.tna-wt-cont01 {
+        margin-right: 26em;
+    }
+    .tna-wt-cont.tna-wt-cont02 {
+        margin-right: 4em;
+    }
+    .tna-wt-cont.tna-wt-cont03 {
+        margin-right: 14em;
+    }
+
+    .tna-wt-cont.tna-wt-cont01 .tna-wt-ele01 p {
+        font-size: 16px;
+    }
+    .tna-wt-cont.tna-wt-cont01 .tna-wt-ele01 .tw01e01-p02 {
+        font-size: 32px;
+    }
+    .tna-wt-cont.tna-wt-cont02 .tna-wt-ele01 p {
+        font-size: 20px;
+    }
+    .tna-wt-cont.tna-wt-cont02 .tna-wt-ele01 .tw02e01-p02 {
+        font-size: 40px;
+    }
+    .tna-wt-cont.tna-wt-cont03 .tna-wt-ele01 p {
+        font-size: 16px;
+    }
+    .tna-wt-cont.tna-wt-cont03 .tna-wt-ele01 .tw03e01-p02 {
+        font-size: 32px;
+    }
+
+    .tna-wt-cont.tna-wt-cont01 .tna-wt-ele03 img {
+        width: 120px;
+    }
+    .tna-wt-cont.tna-wt-cont02 .tna-wt-ele03 img {
+        width: 200px;
+    }
+    .tna-wt-cont.tna-wt-cont03 .tna-wt-ele03 img {
+        width: 120px;
+    }
+    .tna-green-foot {
+        bottom: -95%;
+        width: 96%;
+    }
+    .tna-smb-container {
+        bottom: -100%;
+    }
+    .tna-eff-container {
+        min-height: 900px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .tna-wt-ele02 {
+        width: 35px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .tna-wt-ele02 {
+        width: 35px;
+    }
+    
+}
+
+@media screen and (min-width: 1450px) {
+    .tna-green-foot {
+        bottom: 35%;
+        width: 96%;
+    }
+    .tna-smb-container {
+        bottom: 25%;
+    }
+    .tna-eff-container {
+        min-height: 900px;
+    }
+}
+
+@media screen and (min-width: 2160px) {
+
+}
+
+
+@media screen and (min-width: 2160px) {
+    /* coins animation */
+    .coin.coin01 {
+        width: 8%;
+    }
+    @keyframes ani_coin01 {
+        0% {top: -160em; left: -90em}
+        100% {top: -10%; left: 45%}
+    }
+    .coin.coin02 {
+        width: 15%;
+    }
+    @keyframes ani_coin02 {
+        0% {top: -180em; left: -130em}
+        100% {top: -9em; left: -5em}
+    }
+    .coin.coin03 {
+        width: 20%;
+    }
+    @keyframes ani_coin03 {
+        0% {top: -180em; left: -130em}
+        100% {top: -20em; left: 10em}
+    }
+    .coin.coin04 {
+        width: 20%;
+    }
+    @keyframes ani_coin04 {
+        0% {top: -180em; left: -130em}
+        100% {top: -33em; left: -12em}
+    }
+    .coin.coin05 {
+        width: 20%;
+    }
+    @keyframes ani_coin05 {
+        0% {top: -180em; left: -130em}
+        100% {top: -25em; left: -38em}
+    }
+
+    .tna-green-foot {
+        bottom: 38%;
+        width: 96%;
+    }
+    .tna-smb-container {
+        bottom: 25%;
+    }
+    .tna-eff-container {
+        min-height: 900px;
+    }
+
+    .mk-container .mk-cont01 {
+        width: 250px;
+    }
+    .mk-container .mk-cont02 {
+        width: 280px;
+    }
+    .mk-container .mk-cont03 {
+        width: 300px;
+    }
+    .mk-container .mk-cont04 {
+        width: 250px;
+    }
+    .mk-container .mk-cont05 {
+        width: 260px;
+    }
+    .mk-container .mk-cont02 .img-mk-over {
+        width: 148%;
+        left: -34px;
+    }
+
+    .mk-container .mk-cont03 .img-mk-over {
+        width: 140%;
+        left: -102px;
+    }
+    @keyframes ani_mk01 {
+        0% {top: -42em; left: -32em}
+        50% {left: 30em}
+        100% {top: 65em; left: 28em}
+    }
+    @keyframes ani_mk02 {
+        0% {top: -38em; left: -35em}
+        50% {left: 5em}
+        100% {top: 47em; left: 2em}
+    }
+    @keyframes ani_mk03 {
+        0% {top: -38em; left: -35em}
+        50% {left: 55em}
+        100% {top: 40em; left: 48em}
+    }
+    @keyframes ani_mk04 {
+        0% {top: -38em; left: -35em}
+        50% {left: 24em}
+        100% {top: 30em; left: 27em}
+    }
+    @keyframes ani_mk05 {
+        0% {top: -22em; left: -12em}
+        50% {left: 7em}
+        100% {top: 3em; left: 10em}
+    }
+    /* .tna-wt-cont.tna-wt-cont01 .tna-wt-ele01 p {
+        font-size: 16px;
+    }
+    .tna-wt-cont.tna-wt-cont01 .tna-wt-ele01 .tw01e01-p02 {
+        font-size: 32px;
+    }
+    .tna-wt-cont.tna-wt-cont02 .tna-wt-ele01 p {
+        font-size: 20px;
+    }
+    .tna-wt-cont.tna-wt-cont02 .tna-wt-ele01 .tw02e01-p02 {
+        font-size: 40px;
+    }
+    .tna-wt-cont.tna-wt-cont03 .tna-wt-ele01 p {
+        font-size: 16px;
+    }
+    .tna-wt-cont.tna-wt-cont03 .tna-wt-ele01 .tw03e01-p02 {
+        font-size: 32px; */
+    /* } */
+
+    /* .tna-wt-cont.tna-wt-cont01 .tna-wt-ele03 img {
+        width: 300px;
+    }
+    .tna-wt-cont.tna-wt-cont02 .tna-wt-ele03 img {
+        width: 500px;
+    }
+    .tna-wt-cont.tna-wt-cont03 .tna-wt-ele03 img {
+        width: 300px;
+    } */
+}
+
+@media screen and (max-width: 2160px) {
+    /* coins animation */
+    .coin.coin01 {
+        width: 8%;
+    }
+    @keyframes ani_coin01 {
+        0% {top: -160em; left: -90em}
+        100% {top: -10%; left: 45%}
+    }
+    .coin.coin02 {
+        width: 15%;
+    }
+    @keyframes ani_coin02 {
+        0% {top: -180em; left: -130em}
+        100% {top: -9em; left: -5em}
+    }
+    .coin.coin03 {
+        width: 20%;
+    }
+    @keyframes ani_coin03 {
+        0% {top: -180em; left: -130em}
+        100% {top: -20em; left: 10em}
+    }
+    .coin.coin04 {
+        width: 20%;
+    }
+    @keyframes ani_coin04 {
+        0% {top: -180em; left: -130em}
+        100% {top: -33em; left: -12em}
+    }
+    .coin.coin05 {
+        width: 20%;
+    }
+    @keyframes ani_coin05 {
+        0% {top: -180em; left: -130em}
+        100% {top: -25em; left: -38em}
+    }
+
+    /* MILK CONTAINER */
+    .mk-container .mk-cont01 {
+        width: 250px;
+    }
+    .mk-container .mk-cont02 {
+        width: 280px;
+    }
+    .mk-container .mk-cont03 {
+        width: 300px;
+    }
+    .mk-container .mk-cont04 {
+        width: 250px;
+    }
+    .mk-container .mk-cont05 {
+        width: 260px;
+    }
+    .mk-container .mk-cont02 .img-mk-over {
+        width: 148%;
+        left: -34px;
+    }
+
+    .mk-container .mk-cont03 .img-mk-over {
+        width: 140%;
+        left: -102px;
+    }
+
+    @keyframes ani_mk01 {
+        0% {top: -42em; left: -32em}
+        50% {left: 30em}
+        100% {top: 65em; left: 28em}
+    }
+    @keyframes ani_mk02 {
+        0% {top: -38em; left: -35em}
+        50% {left: 5em}
+        100% {top: 47em; left: 2em}
+    }
+    @keyframes ani_mk03 {
+        0% {top: -38em; left: -35em}
+        50% {left: 55em}
+        100% {top: 40em; left: 48em}
+    }
+    @keyframes ani_mk04 {
+        0% {top: -38em; left: -35em}
+        50% {left: 24em}
+        100% {top: 30em; left: 27em}
+    }
+    @keyframes ani_mk05 {
+        0% {top: -22em; left: -12em}
+        50% {left: 7em}
+        100% {top: 3em; left: 10em}
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    /* coins animation */
+    .coin.coin01 {
+        width: 8%;
+    }
+    @keyframes ani_coin01 {
+        0% {top: -160em; left: -90em}
+        100% {top: -10%; left: 45%}
+    }
+    .coin.coin02 {
+        width: 15%;
+    }
+    @keyframes ani_coin02 {
+        0% {top: -180em; left: -130em}
+        100% {top: -9em; left: -5em}
+    }
+    .coin.coin03 {
+        width: 20%;
+    }
+    @keyframes ani_coin03 {
+        0% {top: -180em; left: -130em}
+        100% {top: -20em; left: 10em}
+    }
+    .coin.coin04 {
+        width: 20%;
+    }
+    @keyframes ani_coin04 {
+        0% {top: -180em; left: -130em}
+        100% {top: -33em; left: -12em}
+    }
+    .coin.coin05 {
+        width: 20%;
+    }
+    @keyframes ani_coin05 {
+        0% {top: -180em; left: -130em}
+        100% {top: -25em; left: -38em}
+    }
+
+    
+
+    .mk-container .mk-cont01 {
+        width: 120px;
+    }
+    .mk-container .mk-cont02 {
+        width: 140px;
+    }
+    .mk-container .mk-cont03 {
+        width: 130px;
+    }
+    .mk-container .mk-cont04 {
+        width: 120px;
+    }
+    .mk-container .mk-cont05 {
+        width: 160px;
+    }
+    .mk-container .mk-cont02 .img-mk-over {
+        width: 148%;
+        left: -34px;
+    }
+
+    .mk-container .mk-cont03 .img-mk-over {
+        width: 140%;
+        left: -18px;
+    }
+
+    @keyframes ani_mk01 {
+        0% {top: -42em; left: -32em}
+        50% {left: 13.5em}
+        100% {top: 37em; left: 13em}
+    }
+    @keyframes ani_mk02 {
+        0% {top: -38em; left: -35em}
+        50% {left: 7em}
+        100% {top: 21em; left: 19em}
+    }
+    @keyframes ani_mk03 {
+        0% {top: -38em; left: -35em}
+        50% {left: 4em}
+        100% {top: 29em; left: 2em}
+    }
+    @keyframes ani_mk04 {
+        0% {top: -38em; left: -35em}
+        50% {left: 14em}
+        100% {top: 5em; left: 19em}
+    }
+    @keyframes ani_mk05 {
+        0% {top: -22em; left: -12em}
+        50% {left: 1.5em}
+        100% {top: 3em; left: 0em}
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+     /* coins animation */
+     .coin.coin01 {
+        width: 8%;
+    }
+    @keyframes ani_coin01 {
+        0% {top: -160em; left: -90em}
+        100% {top: -10%; left: 45%}
+    }
+    .coin.coin02 {
+        width: 15%;
+    }
+    @keyframes ani_coin02 {
+        0% {top: -180em; left: -130em}
+        100% {top: -8em; left: -3em}
+    }
+    .coin.coin03 {
+        width: 20%;
+    }
+    @keyframes ani_coin03 {
+        0% {top: -180em; left: -130em}
+        100% {top: -7em; left: 5em}
+    }
+    .coin.coin04 {
+        width: 20%;
+    }
+    @keyframes ani_coin04 {
+        0% {top: -180em; left: -130em}
+        100% {top: -10em; left: -12em}
+    }
+    .coin.coin05 {
+        width: 20%;
+    }
+    @keyframes ani_coin05 {
+        0% {top: -180em; left: -130em}
+        100% {top: -15em; left: -18em}
+    }
+
+    .mk-container .mk-cont01 {
+        width: 60px;
+    }
+    .mk-container .mk-cont02 {
+        width: 60px;
+    }
+    .mk-container .mk-cont03 {
+        width: 60px;
+    }
+    .mk-container .mk-cont04 {
+        width: 60px;
+    }
+    .mk-container .mk-cont05 {
+        width: 60px;
+    }
+    .mk-container .mk-cont02 .img-mk-over {
+        width: 148%;
+        left: -34px;
+    }
+
+    .mk-container .mk-cont03 .img-mk-over {
+        width: 140%;
+        left: -18px;
+    }
+
+    @keyframes ani_mk01 {
+        0% {top: -42em; left: -32em}
+        50% {left: 13.5em}
+        100% {top: 23em; left: 13em}
+    }
+    @keyframes ani_mk02 {
+        0% {top: -38em; left: -35em}
+        50% {left: 7em}
+        100% {top: 18em; left: 8em}
+    }
+    @keyframes ani_mk03 {
+        0% {top: -38em; left: -35em}
+        50% {left: 4em}
+        100% {top: 18em; left: 0em}
+    }
+    @keyframes ani_mk04 {
+        0% {top: -38em; left: -35em}
+        50% {left: 14em}
+        100% {top: 8em; left: 13em}
+    }
+    @keyframes ani_mk05 {
+        0% {top: -22em; left: -12em}
+        50% {left: 1.5em}
+        100% {top: 7em; left: 2em}
+    }
+}
+
+
+@media screen and (min-width: 3160px)
+{
+    .tna-green-foot {
+        bottom: 19%;
+        width: 83%;
+    }
+    .tna-smb-container {
+        bottom: 12%;
+    }
+}
+@media screen and (min-width: 5160px)
+{
+    .tna-green-foot {
+        bottom: 2%;
+        width: 83%;
+    }
+}
+/* RESPONSIVE END */

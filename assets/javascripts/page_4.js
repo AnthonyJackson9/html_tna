@@ -1,5 +1,8 @@
 $(document).ready(function() {
-    $(".mk-cont").height($(".mk-cont").width() * 1.4);
+    // $(".mk-cont").height($(".mk-cont").width() * 1.4);
+    $(".mk-cont").each(function(index, element) {
+        $(element).height($(element).width() * 1.4);
+    });
 
     setTimeout(() => {
         $(".mk-container .mk-cont01").addClass("paused") 
@@ -18,9 +21,20 @@ $(document).ready(function() {
     }, 4400);
 
     setTimeout(() => {
-        $(".coin.coin01").addClass("paused") 
-    }, 3500);
+        $(".mk-container .mk-cont05").addClass("paused") 
+    }, 4800);
+
+    setTimeout(() => {
+        $(".coin.coin01,.coin.coin02,.coin.coin03,.coin.coin04,.coin.coin05").addClass("paused") 
+    }, 6500);
     
+})
+
+
+$(window).resize(() => {
+    $(".mk-cont").each(function(index, element) {
+        $(element).height($(element).width() * 1.4);
+    });
 })
 
 
